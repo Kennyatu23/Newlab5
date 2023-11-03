@@ -1,12 +1,16 @@
 package ie.atu.lab5;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+@Data
 public class TodoResponse {
-    @jsonProperty("userid")
+    @JsonProperty("userid")
     private int userid;
-    @jsonProperty("id")
+    @JsonProperty ("id")
     private int id;
-    @jsonPropperty("title")
+    @JsonProperty("title")
     private String title;
-    @jsonProperety("completed")
+    @JsonProperty("completed")
     private boolean completed;
 }
